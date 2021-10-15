@@ -167,7 +167,7 @@ html.light {
   height: 24px;
   content: url("img/sun.svg");
 }
-.dark::after {
+.dark.pasif::after {
   content: url("img/moon.svg");
 }
 .content::before {
