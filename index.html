@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body
+    oncontextmenu="return false"
+    onselectstart="return false"
+    ondragstart="return false"
+  >
+    <div id="warp">
+      <header class="navigasi">
+        <div class="exit slide"><img src="/img/Plus.svg" /></div>
+        <div class="profil">
+          <img src="/img/Mask Group.png" alt="" />
+          <h3>Mulya Saputra</h3>
+          <span>Front-end Development</span>
+        </div>
+        <div class="nav-link">
+          <a href="https://mulyasaputra.github.io" class="Button">Dashboard</a>
+          <a href="https://mulyasaputra.github.io/Download" class="Button"
+            >Portfolio</a
+          >
+          <a href="https://mulyasaputra.github.io/Download#about" class="Button"
+            >About</a
+          >
+          <a href="https://mailto:screative010@gmail.com/" class="Button"
+            >Contact</a
+          >
+        </div>
+      </header>
+      <header class="content">
+        <h4>HI THERE!</h4>
+        <h3>I'M <span>Mulya Saputra</span></h3>
+        <p>
+          Hai saya Mulya, dari Indonesia. Saya seorang programer pemula
+          khususnya di bidang Pengembangan Website. Selain pemrograman saya juga
+          memiliki hobi lain seperti Design Grafis yang berfokus di UI/UX Design
+          dan Logo Desain, jika kalin tertarik dengan karya yang telah saya buat
+          kalin bisa mengunduhnya melalui website InSketch atau kalin bisa
+          kunjungi akun sosial media saya.
+        </p>
+        <div class="bt-about about-me">
+          <span>About Me</span>
+          <img src="/img/user.svg" alt="" />
+        </div>
+      </header>
+      <div class="btn-overlay">
+        <div class="dark btn"></div>
+        <a
+          href="https://www.instagram.com/appsventory"
+          target="_blank"
+          class="btn"
+          ><img src="/img/instagram.svg" alt=""
+        /></a>
+        <a href="https://github.com/mulyasaputra" target="_blank" class="btn"
+          ><img src="/img/github.svg" alt=""
+        /></a>
+        <div class="btn slide"><img src="/img/menu.svg" alt="" /></div>
+        <div class="home btn"><img src="/img/Plus.svg" alt="" /></div>
+      </div>
+    </div>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(".about-me").on("click", function () {
+      window.open("https://mulyasaputra.github.io/Download#about");
+    });
+    $(".dark").on("click", function () {
+      $(".dark").toggleClass("active");
+      $(".content").toggleClass("aktif");
+      $("html").toggleClass("light");
+    });
+
+    $(".slide").on("click", function () {
+      $(".navigasi").toggleClass("show");
+    });
+    $(".home").on("click", function () {
+      $(".btn-overlay").toggleClass("active");
+      $(".btn-overlay .home").toggleClass("active");
+    });
+  </script>
+</html>
