@@ -165,20 +165,20 @@ html.light {
 .dark::after {
   position: absolute;
   height: 24px;
-  content: url("/img/sun.svg");
+  content: url("img/sun.svg");
 }
 .dark::after {
-  content: url("/img/moon.svg");
+  content: url("img/moon.svg");
 }
 .content::before {
   position: absolute;
-  content: url("/img/bg-before.svg");
+  content: url("img/bg-before.svg");
   right: 0;
   bottom: -20px;
 }
 .content.aktif::before {
   position: absolute;
-  content: url("/img/bg-before-light.svg");
+  content: url("img/bg-before-light.svg");
   right: 0;
   bottom: -20px;
 }
@@ -274,7 +274,7 @@ html.light {
   }
   .content.aktif::before {
     position: absolute;
-    content: url("/img/bg-before-light.svg");
+    content: url("img/bg-before-light.svg");
     right: -20px;
     bottom: 0;
   }
